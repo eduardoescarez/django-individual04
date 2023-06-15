@@ -4,20 +4,19 @@
 
 
     
+        <div class="d-flex justify-content-center m-4">
         {% if mensajes and mensajes.enviado %}
-                <div class="alert alert-success mt-3" role="alert">
-                    {{ mensajes.resultado }}
-                </div>
+            <div class="alert alert-success mt-3" role="alert">
+                {{ mensajes.resultado }}
+            </div>
         {% endif %}
         {% if mensajes and not mensajes.enviado %}
-                <div class="alert alert-danger mt-3" role="alert">
-                    <h5>Errores en los siguientes campos:</h5>
-                    {{ mensajes.resultado }}
-                </div>
+            <div class="alert alert-danger mt-3" role="alert">
+                <h5>Errores en los siguientes campos:</h5>
+                {{ mensajes.resultado }}
             </div>
-            <div class="col-3"></div>
         {% endif %}
-
+        </div>
 
         <div class="d-flex justify-content-center m-4">
             <form method="post" action="{% url 'newuser' %}" class="formusers p-3" >
@@ -33,7 +32,6 @@
                     </div>
                 </div>
                 {% endfor %}
-
 
                 <div class="d-flex justify-content-center m-4">
                     <button type="submit" class="btn btn-primary">Crear usuario</button>
