@@ -1,1 +1,1 @@
-URL del proyecto en GitHub: https://github.com/eduardoescarez/django-individual03
+URL del proyecto en GitHub: https://github.com/eduardoescarez/django-individual04
