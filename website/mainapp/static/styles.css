@@ -20,3 +20,12 @@ body{
     background-color: rgb(201, 233, 248);
     color: rgb(0, 68, 255);
 }
+
+.logo-navbar{
+    width: 30px;
+    height: 30px;
+}
+
+.logo-footer{
+    height: 100px;
+}
